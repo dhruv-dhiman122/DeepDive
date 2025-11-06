@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 
 //============================================== Space for macro ===========================================//
 
@@ -12,8 +11,11 @@
 //=============================================== space for main function =========================================//
 
 int main() {
-    std::vector<int> prime = {2,3,5,7};
-    std::vector letter = {'a', 'b'};  // C++17 feature: CTAD
+    std::vector<int> vec = {1,2,3,4,5}; // the vector are also data type similar to classes and struct
+    
+    for(int element : vec) {
+        std::cout<<element<<" ";
+    }
     
 	return 0;
 }
